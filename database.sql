@@ -33,6 +33,4 @@ SELECT "username" FROM "accounts" WHERE "transactions_attempted"  > 9;
 
 -- 5.	1.	How do you get the username and account balance of the 3 users with the highest balances, sorted highest to lowest balance? NOTE: Research LIMIT
 
-SELECT "username" FROM "accounts" ORDER BY "account_balance" DESC;
-
-SELECT "accounts_balance" FROM "accounts" ORDER BY "account_balance" DESC;
+SELECT "username", "account_balance" FROM "accounts" ORDER BY "account_balance" DESC LIMIT 3;
